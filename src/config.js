@@ -1,0 +1,1 @@
+export const apiURL = "http://172.17.131.35/Api_PHP/api-rest";

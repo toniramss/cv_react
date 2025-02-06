@@ -55,11 +55,10 @@ const CVForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log("Form data submitted:", formData);
-    // Add code here to handle form submission, such as sending the data to an API
 
     try {
       const response = await fetch("http://localhost/daw/Api_PHP/api-rest/update/update_general.php", {
-        method: "POST", // O "PUT" si tu API lo requiere
+        method: "POST",
         headers: {
           "Content-Type": "application/json",
         },

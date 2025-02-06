@@ -1,6 +1,9 @@
+import { apiURL } from "../config";
+
 export const getGeneralInfo = async () => {
     try {
-        const response = await fetch("http://localhost/daw/Api_PHP/api-rest/get/get_general.php");
+        const response = await fetch(apiURL + "/get/get_general.php");
+        console.log (apiURL + "/get/get_general.php")
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
@@ -14,7 +17,7 @@ export const getGeneralInfo = async () => {
 };
 export const getExperience1 = async () => {
     try {
-        const response = await fetch("http://localhost/daw/Api_PHP/api-rest/get/get_experience.php?idExperience=1");
+        const response = await fetch("http://172.17.131.35/Api_PHP/api-rest/get/get_experience.php?idExperience=1");
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
@@ -28,7 +31,7 @@ export const getExperience1 = async () => {
 };
 export const getExperience2 = async () => {
     try {
-        const response = await fetch("http://localhost/daw/Api_PHP/api-rest/get/get_experience.php?idExperience=2");
+        const response = await fetch("http://172.17.131.35/Api_PHP/api-rest/get/get_experience.php?idExperience=2");
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
@@ -42,7 +45,7 @@ export const getExperience2 = async () => {
 }
 export const getFormation = async () => {
     try {
-        const response = await fetch("http://localhost/daw/Api_PHP/api-rest/get/get_formation.php");
+        const response = await fetch("http://172.17.131.35/Api_PHP/api-rest/get/get_formation.php");
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
@@ -56,7 +59,7 @@ export const getFormation = async () => {
 };
 export const getLanguages = async () => {
     try {
-        const response = await fetch("http://localhost/daw/Api_PHP/api-rest/get/get_languages.php");
+        const response = await fetch("http://172.17.131.35/Api_PHP/api-rest/get/get_languages.php");
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
@@ -70,7 +73,7 @@ export const getLanguages = async () => {
 };
 export const getPersonalCompetences = async () => {
     try {
-        const response = await fetch("http://localhost/daw/Api_PHP/api-rest/get/get_personalCompetences.php");
+        const response = await fetch(apiURL + "/get/get_personalCompetences.php");
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
@@ -84,7 +87,7 @@ export const getPersonalCompetences = async () => {
 };
 export const getTecnicCompetences = async () => {
     try {
-        const response = await fetch("http://localhost/daw/Api_PHP/api-rest/get/get_tecnicCompetences.php");
+        const response = await fetch("http://172.17.131.35/Api_PHP/api-rest/get/get_tecnicCompetences.php");
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
